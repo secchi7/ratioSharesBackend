@@ -7,7 +7,7 @@ pd.options.plotting.backend = "plotly"
 
 app = Flask(__name__)
 cors = CORS(app)
-@app.route("/api/ratio", methods=['GET','POST','OPTIONS'])
+@app.route("/api/ratio", methods=['POST','OPTIONS'])
 @cross_origin()
 def ratio():
     share=request.get_json("share1")
@@ -20,5 +20,5 @@ def ratio():
     return graphJson
 
 if __name__=="__main__":
-    app.run(debug=True, port=8080)
+    app.run()
 
