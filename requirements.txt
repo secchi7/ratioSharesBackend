@@ -4,4 +4,4 @@ gunicorn
 plotly
 pandas
 yfinance
-CORS
+flask_cors

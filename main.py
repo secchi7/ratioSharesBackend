@@ -19,6 +19,7 @@ def backend():
         fig=filtered_df.plot()
         graphJson=plotly.io.to_json(fig,pretty=True)
         return graphJson
+    
     return app
 
 if __name__=="__main__":
